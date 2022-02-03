@@ -9,14 +9,17 @@ function sumar()
 	let numero2; // de tipo numerico
 	let resultado; // de tipo numerico
 
-	//Guardo en las variables los dos números
-	numeroUno = document.getElementById('txtIdNumeroUno').value;
-	numeroDos = document.getElementById('txtIdNumeroDos').value;
+	//Guardo en las variables los dos números y además convierto a entero.
+	numeroUno = parseInt(document.getElementById('txtIdNumeroUno').value);
+	numeroDos = parseInt(document.getElementById('txtIdNumeroDos').value);
 
 	//convierto ambos números en enteros
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
 	
+	/*numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	*/
+
+
 	// guardo en la otra variable el resultado de la suma de ambos numeros.
 	resultado = numeroUno+numeroDos;
 
