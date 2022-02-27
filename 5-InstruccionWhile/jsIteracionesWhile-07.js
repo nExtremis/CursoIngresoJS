@@ -11,8 +11,14 @@ function mostrar()
 	acumulador=0;
 	respuesta='si';
 
-
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
-
+	while (respuesta=='si'){
+		numeroIngresado = prompt("ingrese un numero");
+		numeroIngresado = parseInt(numeroIngresado);
+		acumulador += numeroIngresado
+		contador += 1
+		respuesta = prompt("quiere ingresar otro numero?");
+	}
+	promedio =acumulador/5;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = promedio;
 }//FIN DE LA FUNCIÓN

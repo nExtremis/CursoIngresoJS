@@ -7,7 +7,13 @@ function mostrar()
 	contador=0;
 	acumulador=0;
 	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
+	while (contador <5){
+		numeroIngresado = prompt("ingrese un numero");
+		numeroIngresado = parseInt(numeroIngresado);
+		acumulador += numeroIngresado
+		contador += 1
+	}
+	promedio =acumulador/5;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = promedio;
 }//FIN DE LA FUNCIÓN
