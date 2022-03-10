@@ -13,4 +13,3 @@ function mostrar()
 	// muestro el nombre del usuario por el alert
 	alert("el nombre ingresado es: "+nombreIngresado);
 }
-
