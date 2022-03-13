@@ -9,16 +9,20 @@ function mostrar()
 	var respuesta;
 	contador=0;
 	acumulador=0;
-	respuesta='si';
+	respuesta='s';
 
-	while (respuesta=='si'){
+	while (respuesta=='s'){
 		numeroIngresado = prompt("ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
+		while(Number.isNaN(numeroIngresado)==true){
+			numeroIngresado = prompt("Error.ingrese un numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
 		acumulador += numeroIngresado
 		contador += 1
 		respuesta = prompt("quiere ingresar otro numero?");
 	}
-	promedio =acumulador/5;
+	promedio =acumulador/contador;
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = promedio;
 }//FIN DE LA FUNCIÓN

@@ -13,13 +13,17 @@ function mostrar()
 	var respuesta;
 	var esElMinimo;
 	var esElMaximo;
+	esElMinimo = numeroIngresado < numeroMinimo;
+	esElMaximo = numeroIngresado > numeroMaximo; 
 	//iniciar variables
 	banderaDelPrimero="es el primero";
-	respuesta='si';
-	while(respuesta=="si"){
+	respuesta='s';
+	while(respuesta=="s"){
 		numeroIngresado = prompt("ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
-		if(banderaDelPrimero==="es el primero"){   // booleano =  true 
+		esElMinimo = numeroIngresado < numeroMinimo;
+		esElMaximo = numeroIngresado > numeroMaximo; 
+		if(banderaDelPrimero=="es el primero"){   // booleano =  true 
 			numeroMinimo = numeroIngresado
 			numeroMaximo = numeroIngresado
 			banderaDelPrimero = "no es el primero";
@@ -28,9 +32,10 @@ function mostrar()
 		}else if (esElMinimo){
 			numeroMinimo = numeroIngresado;
 		}
-
 		respuesta = prompt("quiere ingresar otro numero?");
 	}
-	document.getElementbyId('txtIdMaximo').value = numeroMaximo;
-	document.getElementbyId('txtIdMinimo').value = numeroMinimo;
+	document.getElementById("txtIdMaximo").value = numeroMaximo;
+	document.getElementById("txtIdMinimo").value = numeroMinimo;
 }//FIN DE LA FUNCIÓN
+
+							

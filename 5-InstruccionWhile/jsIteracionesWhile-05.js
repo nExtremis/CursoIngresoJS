@@ -4,7 +4,7 @@ Al presionar el botón pedir un sexo
 function mostrar()
 {
 	//declaro mis variables
-	var sexoIngresado;
+	let sexoIngresado;
 	// pido los datos al user
 	sexoIngresado = prompt("ingrese f ó m.");
 	// uso un while para pedir el sexo hasta que de la respuesta correcta.
@@ -12,12 +12,12 @@ function mostrar()
 		//mensaje error
 		alert("Error, respuesta no valida");
 		// volvemos a pedir el dato
-		sexoIngresado = prompt("ingrese f ó m.");
+		sexoIngresado = prompt("ingrese f ó m."); 
 	}
 	// si el user no pone "f" o "m", entra en un bucle infinito, entonces nunca sale del while
 	
 	//renombramos los datos para mostrarlos por la caja de texto
-	if (sexoIngresado == "f") {
+	if(sexoIngresado == "f") {
 		sexoIngresado = "Femenino" ;
 	}else{
 		sexoIngresado = "Masculino" ;

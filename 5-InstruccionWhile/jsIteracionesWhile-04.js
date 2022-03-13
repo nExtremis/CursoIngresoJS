@@ -19,9 +19,6 @@ function mostrar()
 			numeroIngresado = prompt("solo puede ingresar numeros.");
 			numeroIngresado = parseInt(numeroIngresado);
 		}
-		
-
 	}
 	document.getElementById("txtIdNumero").value = numeroIngresado;
-	
 }//FIN DE LA FUNCIÓN 

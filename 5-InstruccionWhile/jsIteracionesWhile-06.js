@@ -10,6 +10,11 @@ function mostrar()
 	while (contador <5){
 		numeroIngresado = prompt("ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
+		//validamos que ingrese si o si un numero
+		while(Number.isNaN(numeroIngresado)==true){
+			numeroIngresado = prompt("Error.ingrese un numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
 		acumulador += numeroIngresado
 		contador += 1
 	}
