@@ -51,13 +51,13 @@ function mostrar()
 	promedioPositivos = numPositivos/cantTotalNum;
 	promedioNegativos = numNegativos/cantTotalNum;
 	positivosMenosNEgativos = sumaPositivos - sumaNegativos;
-	document.write("la suma de negativos es :"+sumaNegativos);
-	document.write("la suma de positivos es :"+sumaPositivos);
-	document.write("la cantidad de negativos es :"+numNegativos);
-	document.write("la cantidad de positivos es :"+numPositivos);
-	document.write("la cantidad de ceros es :"+cantCeros);
-	document.write("la cantidad de numeros pares es :"+cantNumPares);
-	document.write("el promedio de numeros negativos es :"+promedioNegativos);
-	document.write("el promedio de numeros positivos es :"+promedioPositivos);
+	document.write("la suma de negativos es :"+sumaNegativos+"<br>");
+	document.write("la suma de positivos es :"+sumaPositivos+"<br>");
+	document.write("la cantidad de negativos es :"+numNegativos+"<br>");
+	document.write("la cantidad de positivos es :"+numPositivos+"<br>");
+	document.write("la cantidad de ceros es :"+cantCeros+"<br>");
+	document.write("la cantidad de numeros pares es :"+cantNumPares+"<br>");
+	document.write("el promedio de numeros negativos es :"+promedioNegativos+"<br>");
+	document.write("el promedio de numeros positivos es :"+promedioPositivos+"<br>");
 	document.write("la diferencia de numeros positivos y numeros negativos es :"+positivosMenosNEgativos);
 }//FIN DE LA FUNCIÓN
